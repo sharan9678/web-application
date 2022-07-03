@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Vowel and Reverse Number</title>
+    <style>
+        body {
+            background-color: rgb(190, 179, 179);
+        }
+
+        input[type=text] {
+            padding: 10px 60px;
+        }
+
+        input[type=submit] {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <input type="text" id="str" placeholder="Enter String/Number">
+        <input type="submit" value="Submit" onclick="evalInput();" name="sub"><br>
+        <div id="result"></div>
+    </center>
+    <script>
+        function evalInput() {
+            var str = document.getElementById("str").value;
+            var resultId = document.getElementById("result");
+            if (!(isNaN(str))) {
+                var num = parseInt(str);
+                var rev = 0;
+                var rem;
+                while (num != 0) {
+                    rem = num % 10;
+                    num = parseInt(num / 10);
+                    rev = rev * 10 + rem;
+                }
+                resultId.innerHTML = "<p>Reverse of: <strong>" + str + " is " + rev + "<strong></p>";
+            } else {
+                var text = "<p>The Entered string is: <strong>" + str + "</strong></p>";
+                var i;
+                for (i = 0; i < str.length; i++) {
+                    var ch = str.charAt(i);
+                    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+                        break;
+                    }
+                }
+                if (i < str.length) {
+                    text = "<p>The Position of the Leftmost Vowel: <strong> " + str.charAt(i) + " is " + (i + 1) + "<strong><p/>";
+                    resultId.innerHTML = text;
+                    exit;
+                } else {
+                    text = "<p> The Entered String Has No Vowels</p>";
+                    resultId.innerHTML = text;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

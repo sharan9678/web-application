@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font size and color</title>
+</head>
+<body>
+    <center>
+        <p id="size"></p>
+    </center>
+</body>
+<script>
+    var interval1 = setInterval(inTimer, 1000);
+    var fontSize = 5;
+    var pid = document.getElementById("size");
+    var interval2;
+
+    function inTimer() {
+        pid.innerHTML = "TEXT GROWING";
+        pid.setAttribute("style", "font-size: " + fontSize + "px; color:red");
+        fontSize += 5;
+        if (fontSize >= 50) {
+            clearInterval(interval1);
+            interval2 = setInterval(deTimer, 1000);
+        }
+    }
+
+    function deTimer() {
+        fontSize -= 5;
+        pid.innerHTML = "TEXT SHRINKING";
+        pid.setAttribute("style", "font-size:" + fontSize + "px; color:blue");
+        if (fontSize === 5) {
+            clearInterval(interval2);
+        }
+    }
+</script>
+</html>
