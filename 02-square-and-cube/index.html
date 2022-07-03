@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squares and Cubes</title>
+</head>
+<style>
+    body {
+        background-color:  #5F97AA;
+    }
+
+    h3 {
+        text-align: center;
+        color: #2D5F6E;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    table,
+    th,
+    td {
+        background-color: #93C4D1 ;
+        text-align: center;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: larger;
+        color: #18363E;
+    }
+</style>
+<body>
+    <center>
+        <h3>Squares and Cubes of numbers from 0 to 10</h3>
+        <script>
+            document.write("<table border> <tr> <th>Number</th> <th>Square</th> <th>Cube</th></tr>");
+            for(var n=0; n<=10; n++) {
+                document.write( "<tr><td>" + n + "</td><td>" + n*n + "</td><td>" + n*n*n + "</td></tr>");
+            }
+            document.write("</table>");
+        </script> 
+    </center>
+</body>
+</html>
