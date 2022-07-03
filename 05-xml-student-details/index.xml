@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<students>
+    <student>
+        <usn>USN: 1GA19CS165</usn>
+        <name>Name: Sharan Raj</name>
+        <college>College: Global Academy of Technology</college>
+        <branch>Branch: Computer Science Engineering</branch>
+        <yoj>Year: 2019</yoj>
+        <email>E-mail: sharanrajtm@gmail.com</email>
+    </student>
+    <student>
+        <usn>USN: 1GA19CS166</usn>
+        <name>Name: Tejas Udupa S</name>
+        <college>College: Global Academy of Technology</college>
+        <branch>Branch: Computer Science Engineering</branch>
+        <yoj>Year: 2019</yoj>
+        <email>E-mail: tejasudupas@gmail.com</email>
+    </student>
+    <student>
+        <usn>USN: 1GA19CS184</usn>
+        <name>Name: Vinayaka R S</name>
+        <college>College: Global Academy of Technology</college>
+        <branch>Branch: Computer Science Engineering</branch>
+        <yoj>Year: 2019</yoj>
+        <email>E-mail: vinayakars@gmail.com</email>
+    </student>
+</students>
