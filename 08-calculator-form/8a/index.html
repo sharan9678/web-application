@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(100, 100, 223);
+            }
+
+            input[type=radio] {
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="script.php" method="post" attribute="post">
+            <p>First Value:<br>
+                <input type="text" name="first" id="first">
+            </p>
+            <p>Second Value:<br>
+                <input type="text" name="second" id="second">
+            </p>
+            <input type="radio" name="group1" id="add" value="add" checked="true">+<br>
+            <input type="radio" name="group1" id="subtract" value="subtract">-<br>
+            <input type="radio" name="group1" id="times" value="times">x<br>
+            <input type="radio" name="group1" id="divide" value="divide">/<br>
+
+            <button type="submit" name="answer" id="answer" value="answer">Calculate</button>
+        </form>
+    </body>
+</html>
